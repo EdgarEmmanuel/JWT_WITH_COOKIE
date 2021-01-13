@@ -1,0 +1,13 @@
+<%- include("./layout/nav.ejs") -%>
+
+    <h1 style="text-align:center;">SIGN UP</h1>
+    <form action="/signUp" method="post" class="container">
+        <input type="email" name="email" class="form-control" placeholder="email" /><br/>
+        <input type="password" name="password" min="7" class="form-control" placeholder="password" /><br/>
+        <input type="submit" class="btn btn-primary" value="SIGN UP" />
+    </form>
+    <div class="container_error" style="text-align:center;margin-top:80px;">
+        <a href="/login">Already have an account ? Sign In </a>
+    </div>
+
+<%- include("layout/footer.ejs") -%>
